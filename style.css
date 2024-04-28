@@ -1,37 +1,33 @@
-*{
+* {
     font-family: sans-serif;
     padding:0px;
     margin:0px;
     box-sizing: border-box;
 }
 
-body{
-    
+body {
     background-color: #f4f4f4;
-    
 }
 
-header{
-    
+header {
     width: 99vw;
     height: 8vh;
     background-color: rgb(226, 13, 13);
     align-content: center;
-   
 }
 
-header img{
+header img {
     width: 200px;
     height: 150px;
     margin-left: 45vw;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 /* CSS PARA EL NAV Y MENU  */
-nav{
+nav {
     background-color:rgb(226, 13, 13) ;
     width: 99vw;
     height: 7vh;
@@ -39,7 +35,7 @@ nav{
     z-index: 1001;
 }
 
-.nav li a{
+.nav li a {
     justify-items: end;
     list-style-type: none;
     background-color: rgb(226, 13, 13);
@@ -49,33 +45,31 @@ nav{
     display:block;
 }
 
-.nav li a:hover{
+.nav li a:hover {
     background-color: rgb(181, 31, 8);
     cursor: crosshair;
 }
 
-.nav > li{
+.nav > li {
     float:left;
     
 }
 
-.nav li ul{
-    
+.nav li ul {
     display: none;
     position:absolute;
     min-width: 140px;
 }
 
 .nav li:hover > ul {
-    
     display: block;
 }
 
-.nav li ul li{
+.nav li ul li {
     position: relative;
 }
 
-.nav li ul li ul{
+.nav li ul li ul {
     left: 140px;
     top:10px
 }
@@ -83,7 +77,7 @@ nav{
 /* INICIO CSS PARA INDEX */
 /* CSS PARA EL CONTENIDO DE LA WEB */
 
-.sectionmain{
+.sectionmain {
     background-image: url(img/8724306.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +90,7 @@ nav{
     height: 90vh;
 }
 
-.contenido{
+.contenido {
     width: 100%;
     height: 100%;
     color: #ff0000;
@@ -150,7 +144,7 @@ nav{
 }
 /* FIN CSS ANIMADO PARA LETRAS */
 
-aside{
+aside {
     align-items: center;
     align-content: center;
     margin: 10px 10px;
@@ -160,10 +154,9 @@ aside{
     gap: 10px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   
 }
 
-aside div:first-child{
+aside div:first-child {
     width: 100%;
     height: 80%;
     background-color: #ffffffab;
@@ -171,7 +164,7 @@ aside div:first-child{
     border-radius: 20px;
 }
 
-aside div:nth-child(2){
+aside div:nth-child(2) {
     width: 100%;
     height: 80%;
     background-color: #ffffffab;
@@ -179,14 +172,14 @@ aside div:nth-child(2){
     border-radius: 20px;
 }
 
-aside div:nth-child(3){
+aside div:nth-child(3) {
     width: 100%;
     height: 80%;
     background-color: #ffffffab;
     border-radius: 20px;
 }
 
-aside img{
+aside img {
     width: 80%;
     height: 90%;
     border-radius: 200%;
@@ -205,7 +198,7 @@ video:first-child {
     border-radius: 20px;
 }
 
-.titulito:nth-child(2){
+.titulito:nth-child(2) {
     background-color: #414d6800;
     width: 100%;
     height: 100%;
@@ -215,17 +208,16 @@ video:first-child {
     align-content: center;
 }
 
-.divaside{
+.divaside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-
 }
 
-footer{
+footer {
     overflow: hidden;
     align-items: center;
     align-content: center;
@@ -235,12 +227,10 @@ footer{
     background-color: red;
     text-align: center;
     font-size: 30px;
-    
 }
 /* CSS CARRUSEL  */
 
-.carrusel{
-   
+.carrusel {
   border-right: 5px solid red;
   display: grid;
   grid-template-rows: 450px 50px;
@@ -249,7 +239,7 @@ footer{
   justify-items: center;
 }
 
-.item h1{
+.item h1 {
     z-index: 1;
     margin-top: 30px;
 }
@@ -275,7 +265,6 @@ div.item {
     position: absolute;
     width: 300px;
     height: 400px;
- 
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
@@ -383,7 +372,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
 }
   
-#oferta{
+#oferta {
     text-align: left; 
     font-family: Comic Sans MS; 
     font-weight:bold; 
@@ -395,7 +384,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 /* FIN CSS PARA INDEX */
 
 /* CSS para Area Actuacion */
-.tituloj{
+.tituloj {
     border-top: 5px solid black;
     text-align: center;
     padding-top: 30px;
@@ -405,7 +394,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     text-shadow: 4px 4px 6px black;
 }
 
-.juegos{
+.juegos {
     background-image: url(img/fondojuegos.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -416,20 +405,19 @@ input:nth-of-type(5):checked ~ main#carousel {
     background-color: rgb(208, 10, 10);
 }
 
-.container:after{
-    
+.container:after {
     content: "";
     display: block;
     height: 0px;
     clear: both;
 }
 
-.container{
+.container {
     width: 90%;
     margin:0 10%;
 }
 
-.container div{
+.container div {
     width:20%;
     height: auto;
     display: inline;
@@ -438,7 +426,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     padding:0;
 }
 
-.container div img{
+.container div img {
     width: 100%;
     height: auto;
     box-shadow: 0 0 10px #666;
@@ -446,7 +434,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     border-radius: 5px;
 }
 
-.container div img~span{
+.container div img~span {
     width: 100%;
     display: block;
     opacity: 0;
@@ -458,17 +446,17 @@ input:nth-of-type(5):checked ~ main#carousel {
     text-align: center;
 }
 
-.container div img:hover+span{
+.container div img:hover+span {
     opacity: 1;
 }
 
-.container:hover div{
+.container:hover div {
     opacity: 0.7;
     transform: scale(0.7);
     transition: 1s;
 }
 
-.container:hover div:hover{
+.container:hover div:hover {
     opacity: 20;
     transform: scale(1);
 }
@@ -477,7 +465,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 /* INICIO CSS SOBRE NOSOTROS */
 
-.sectionsobre{
+.sectionsobre {
   background-image: url(img/8724306.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -488,10 +476,9 @@ input:nth-of-type(5):checked ~ main#carousel {
   grid-template-rows: repeat(12, 1fr);
   width: 99vw;
   height: 90vh;
-
 }
 
-.contenidonosotros{
+.contenidonosotros {
   color: #ff0000;
   width: 100%;
   height: 100%;
@@ -503,20 +490,20 @@ input:nth-of-type(5):checked ~ main#carousel {
   text-shadow: 2px 4px 6px gold;
 }
 
-.contenidonosotros2{
+.contenidonosotros2 {
   margin-left: 2vw;
   grid-row: 2 / 6;
   grid-column: 1 / 1;
 }
 
-.contenidonosotros2 img{
+.contenidonosotros2 img {
   border-radius: 30px;
   width: 100%;
   height: 100%;
   border: 5px solid black;
 }
 
-.contenidonosotros3{
+.contenidonosotros3 {
   margin-left: 2vw;
   grid-row: 2 / 6;
   grid-column: 1 / 1;
@@ -527,10 +514,9 @@ input:nth-of-type(5):checked ~ main#carousel {
   font-weight: bolder;
   text-shadow: 4px 4px 6px gold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
-.contenidonosotros4{
+.contenidonosotros4 {
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 30px;
@@ -540,12 +526,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   margin-left: 3vw;
   justify-content: center;
   text-align: justify;
-
   background-color: rgba(255, 255, 255, 0.526);
   border: 5px solid white;
 }
 
-.contenidonosotros5{
+.contenidonosotros5 {
   margin-top: 3vh;
   padding-left: 5px;
   padding-right: 5px;
@@ -563,7 +548,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   gap: 100px;
 }
 
-.nosotros1{
+.nosotros1 {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -573,10 +558,9 @@ input:nth-of-type(5):checked ~ main#carousel {
   background-color: rgba(255, 255, 255, 0.353);
   text-align: center;
   border: 5px solid red;
-
 }
 
-.imgsobre{
+.imgsobre {
   padding: 3px;
   margin-left: 5px;
   margin-top: 10px;
@@ -585,7 +569,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   border-radius: 30px;
 }
 
-.nosotros2{
+.nosotros2 {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -597,7 +581,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   border: 5px solid red;
 }
 
-.nosotros3{
+.nosotros3 {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -609,8 +593,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   border: 5px solid red;
 }
 
-footer{
-
+footer {
   align-items: center;
   align-content: center;
   height: 100%;
@@ -673,20 +656,18 @@ footer{
   border: 5px solid red;  
 }
 
-.form-container .title{
+.form-container .title {
   color: white;
   font-size: 28px;
   font-weight: bolder;
   text-align: center;
-
 }
 
-.form-content{
+.form-content {
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-
 }
 
 .form-content  .left-side {
@@ -715,7 +696,7 @@ form .input-box input {
   border-right: solid 2px white;
 }
 
-ion-icon{
+ion-icon {
   padding: 3px;
   color: red;
   font-size: 30px;
@@ -723,7 +704,7 @@ ion-icon{
   border-bottom: 3px solid black;
 }
 
-.sectioncontacto{
+.sectioncontacto {
   background-image: url(img/8724306.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -734,10 +715,9 @@ ion-icon{
   grid-template-rows: 1fr 1fr 1fr;
   width: 99vw;
   height: 90vh;
-
 }
 
-.footercontacto{
+.footercontacto {
   overflow: hidden;
   align-items: center;
   align-content: center;
@@ -747,8 +727,6 @@ ion-icon{
   background-color: red;
   text-align: center;
   font-size: 30px;
-
 }
-
 
 /* FIN CSS CONTACTO */
