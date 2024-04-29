@@ -23,6 +23,11 @@
                 </li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
+        <div class="login">
+            <form action="login"> <input type="text" placeholder="Usuario" required>
+            <br> <input type="password" placeholder="Contraseña" minlength="4" maxlength="8" required> <br>
+             <input type="submit" value="Login" id="logreg"> <input type="submit" value="Registrarme" id="logreg" ></form>
+        </div>
         </nav>
     <section class="sectionmain">
         <section class="contenido">
@@ -42,17 +47,18 @@
                 <main>
             </div>
         </section>
-        <aside>
-            <div class="divaside">
-                <video autoplay loop src="img/Download.mp4"  ></video>
+        <aside class="tododivaside">
+            
+            <div class="divaside" id="lufi" >
+                <video muted autoplay loop src="img/Download.mp4"  ></video>
                 <div class="titulito">⚔️<Strong>OnePiece</Strong>⚔️ <p> <br> Próximo episodio la semana que viene.</div>
             </div>
-            <div class="divaside">
+            <div class="divaside" id="capi" >
                 <img src="img/capi.jpg" alt="">
                 <div class="titulito">🛡️<Strong>Capitan America</Strong> <p></p><br>Nintento mola mogollon</div>
             </div>
-            <div class="divaside">
-                <video autoplay loop src="img/Download_1.mp4"  ></video>
+            <div class="divaside" id="azul" >
+                <video muted autoplay loop src="img/Download_1.mp4"  ></video>
                 <div class="titulito">🌊<Strong>SQUIRTLE</Strong><br>Nuestro Pokemon Bailarin</div> 
             </div>
         </aside>
