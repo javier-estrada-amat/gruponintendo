@@ -1,46 +1,47 @@
-*{
+* {
     font-family: sans-serif;
     padding:0px;
     margin:0px;
     box-sizing: border-box;
 }
 
-body{
-    
+body {
     background-color: #f4f4f4;
-    
 }
-header{
-    
+
+header {
     width: 99vw;
     height: 8vh;
     background-color: rgb(226, 13, 13);
     align-content: center;
-   
 }
-header img{
+
+header img {
     width: 200px;
     height: 150px;
     margin-left: 45vw;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 /* CSS PARA EL NAV Y MENU  */
-nav{
-    
+nav {
     background-color:rgb(226, 13, 13) ;
     width: 99vw;
     height: 7vh;
     position: relative;
     z-index: 1001;
 }
-.login{
+
+.login {
   float: right;
  padding-right: 15px;
  
 }
-.nav li a{
+
+.nav li a {
     justify-items: end;
     list-style-type: none;
     background-color: rgb(226, 13, 13);
@@ -48,31 +49,33 @@ nav{
     text-decoration: none;
     padding: 15px 15px;
     display:block;
-    
 }
-.nav li a:hover{
+
+.nav li a:hover {
     background-color: rgb(181, 31, 8);
     cursor: crosshair;
-    
 }
-.nav > li{
+
+.nav > li {
     float:left;
     
 }
-.nav li ul{
-    
+
+.nav li ul {
     display: none;
     position:absolute;
     min-width: 140px;
 }
+
 .nav li:hover > ul {
-    
     display: block;
 }
-.nav li ul li{
+
+.nav li ul li {
     position: relative;
 }
-.nav li ul li ul{
+
+.nav li ul li ul {
     left: 140px;
     top:10px
 }
@@ -80,7 +83,7 @@ nav{
 /* INICIO CSS PARA INDEX */
 /* CSS PARA EL CONTENIDO DE LA WEB */
 
-.sectionmain{
+.sectionmain {
     background-image: url(img/8724306.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -91,11 +94,9 @@ nav{
     grid-template-rows: 1fr 1fr;
     width: 99vw;
     height: 90vh;
-    
-
 }
 
-.contenido{
+.contenido {
     width: 100%;
     height: 100%;
     color: #ff0000;
@@ -104,16 +105,18 @@ nav{
     font-size: 30px;
     padding-top: 50px;
     text-shadow: 4px 4px 6px gold;;
-
-    
 }
 /* CSS ANIMADO PARA LETRAS DE ESTA WEB:  https://animista.net/play/text/tracking-in/tracking-in-expand*/
+
 .tracking-in-contract-bck-bottom {
   position: relative;
   z-index: 1000;
 	-webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          position: relative; /* O absolute, fixed, o sticky según sea necesario */
+          z-index: 1000; /* Asegura que sea un número alto para superponer sobre otros elementos */
 }
+
 @-webkit-keyframes tracking-in-contract-bck-bottom {
   0% {
     letter-spacing: 1em;
@@ -130,6 +133,7 @@ nav{
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-contract-bck-bottom {
   0% {
     letter-spacing: 1em;
@@ -148,7 +152,7 @@ nav{
 }
 /* FIN CSS ANIMADO PARA LETRAS */
 
-aside{
+aside {
     align-items: center;
     align-content: center;
     margin: 10px 10px;
@@ -158,10 +162,9 @@ aside{
     gap: 10px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   
 }
 
-aside div:first-child{
+aside div:first-child {
     width: 100%;
     height: 80%;
     background-color: #ffffffab;
@@ -169,7 +172,7 @@ aside div:first-child{
     border-radius: 20px;
 }
 
-aside div:nth-child(2){
+aside div:nth-child(2) {
     width: 100%;
     height: 80%;
     background-color: #ffffffab;
@@ -177,20 +180,21 @@ aside div:nth-child(2){
     border-radius: 20px;
 }
 
-aside div:nth-child(3){
+aside div:nth-child(3) {
     width: 100%;
     height: 80%;
     background-color: #ffffffab;
     border-radius: 20px;
 }
 
-    aside img{
-        width: 80%;
-        height: 90%;
-        border-radius: 200%;
-        margin-left: 10px;
-    }
- video:first-child {
+aside img {
+    width: 80%;
+    height: 90%;
+    border-radius: 200%;
+    margin-left: 10px;
+}
+
+video:first-child {
     padding: 0;
     margin-left: 10px;
     display: grid;
@@ -202,7 +206,7 @@ aside div:nth-child(3){
     border-radius: 20px;
 }
 
-.titulito:nth-child(2){
+.titulito:nth-child(2) {
     background-color: #414d6800;
     width: 100%;
     height: 100%;
@@ -212,17 +216,16 @@ aside div:nth-child(3){
     align-content: center;
 }
 
-.divaside{
+.divaside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-
 }
 
-footer{
+footer {
     overflow: hidden;
     align-items: center;
     align-content: center;
@@ -232,14 +235,10 @@ footer{
     background-color: red;
     text-align: center;
     font-size: 30px;
-    
-    
-    
 }
 /* CSS CARRUSEL  */
 
-.carrusel{
-   
+.carrusel {
   border-right: 5px solid red;
   display: grid;
   grid-template-rows: 450px 50px;
@@ -248,10 +247,11 @@ footer{
   justify-items: center;
 }
 
-.item h1{
+.item h1 {
     z-index: 1;
     margin-top: 30px;
 }
+
 main#carousel {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
@@ -267,9 +267,9 @@ main#carousel {
     --middle: 3;
     --position: 1;
     pointer-events: none;
-  }
+}
   
-  div.item {
+div.item {
     position: absolute;
     width: 300px;
     height: 400px;
@@ -279,8 +279,9 @@ main#carousel {
     transform: rotateY(calc(-10deg * var(--r)))
       translateX(calc(-300px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
-  }  
-  div.item:nth-of-type(1) {
+}
+  
+div.item:nth-of-type(1) {
     border-radius: 10px;
     --offset: 1;
     display: grid;
@@ -290,8 +291,9 @@ main#carousel {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-  }
-  div.item:nth-of-type(2) {
+}
+
+div.item:nth-of-type(2) {
     border-radius: 10px;
     --offset: 2;
     background-image: url(img/Estadisticas.jpeg);
@@ -299,8 +301,9 @@ main#carousel {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-  }
-  div.item:nth-of-type(3) {
+}
+
+div.item:nth-of-type(3) {
     border-radius: 10px;
     --offset: 3;
     background-size: cover;
@@ -309,8 +312,9 @@ main#carousel {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-  }
-  div.item:nth-of-type(4) {
+}
+
+div.item:nth-of-type(4) {
     --offset: 4;
     border-radius: 10px;
     background-image: url(img/online.jpg);
@@ -318,8 +322,9 @@ main#carousel {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-  }
-  div.item:nth-of-type(5) {
+}
+
+div.item:nth-of-type(5) {
     border-radius: 10px;
     --offset: 5;
     color: white;
@@ -329,57 +334,62 @@ main#carousel {
     text-shadow: 4px 4px 6px black;;
     align-items: center;
     background-color: #ff0000;
-  }
+}
   
-  input:nth-of-type(1) {
+input:nth-of-type(1) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-  }
+}
   input:nth-of-type(1):checked ~ main#carousel {
     --position: 1;
-  }
+}
   
-  input:nth-of-type(2) {
+input:nth-of-type(2) {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-  }
-  input:nth-of-type(2):checked ~ main#carousel {
+}
+
+input:nth-of-type(2):checked ~ main#carousel {
     --position: 2;
-  }
+}
   
-  input:nth-of-type(3) {
+input:nth-of-type(3) {
     grid-column: 4 /5;
     grid-row: 2 / 3;
-  }
-  input:nth-of-type(3):checked ~ main#carousel {
+}
+
+input:nth-of-type(3):checked ~ main#carousel {
     --position: 3;
-  }
+}
   
-  input:nth-of-type(4) {
+input:nth-of-type(4) {
     grid-column: 5 / 6;
     grid-row: 2 / 3;
-  }
-  input:nth-of-type(4):checked ~ main#carousel {
+}
+
+input:nth-of-type(4):checked ~ main#carousel {
     --position: 4;
-  }
+}
   
-  input:nth-of-type(5) {
+input:nth-of-type(5) {
     grid-column: 6 / 7;
     grid-row: 2 / 3;
-  }
-  input:nth-of-type(5):checked ~ main#carousel {
+}
+
+input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
-  }
+}
   
-#oferta{
+#oferta {
     text-align: left; 
     font-family: Comic Sans MS; 
     font-weight:bold; 
     font-size: 30px; 
     color: #EBD758;
     text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
-    }
-#logreg{
+}
+
+#logreg {
 border: 3px solid white;
 border-color: white;
   background-color: red;
@@ -389,8 +399,7 @@ border-color: white;
 /* FIN CSS PARA INDEX */
 
 /* CSS para Area Actuacion */
-.mesjuegos{
-
+.mesjuegos {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 80px;
@@ -399,12 +408,14 @@ border-color: white;
   color: rgb(255, 251, 251);
   text-shadow: 4px 4px 6px black;
 }
-#mes{
+
+#mes {
   background-color: red;
   color: black;
   border-radius: 40px;
 }
-.tituloj{
+
+.tituloj {
     border-top: 5px solid black;
     text-align: center;
     padding-top: 30px;
@@ -413,7 +424,8 @@ border-color: white;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px 6px black;
 }
-.juegos{
+
+.juegos {
     background-image: url(img/fondojuegos.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -423,19 +435,20 @@ border-color: white;
     margin: 0 auto;
     background-color: rgb(208, 10, 10);
 }
-.container:after{
-    
+
+.container:after {
     content: "";
     display: block;
     height: 0px;
     clear: both;
 }
-.container{
+
+.container {
     width: 90%;
     margin:0 10%;
 }
 
-.container div{
+.container div {
     width:20%;
     height: auto;
     display: inline;
@@ -443,14 +456,16 @@ border-color: white;
     margin: 0% 1% 0% 0%;
     padding:0;
 }
-.container div img{
+
+.container div img {
     width: 100%;
     height: auto;
     box-shadow: 0 0 10px #666;
     border:5px solid #ff0000;
     border-radius: 5px;
 }
-.container div img~span{
+
+.container div img~span {
     width: 100%;
     display: block;
     opacity: 0;
@@ -461,25 +476,27 @@ border-color: white;
     box-shadow: 5px 5px 10px #666;
     text-align: center;
 }
-.container div img:hover+span{
+
+.container div img:hover+span {
     opacity: 1;
 }
-.container:hover div{
+
+.container:hover div {
     opacity: 0.7;
     transform: scale(0.7);
     transition: 1s;
 }
-.container:hover div:hover{
+
+.container:hover div:hover {
     opacity: 20;
     transform: scale(1);
 }
 
 /* CSS FIN DE AREA ACTUACIÓN */
 
-
 /* INICIO CSS SOBRE NOSOTROS */
 
-.sectionsobre{
+.sectionsobre {
   background-image: url(img/8724306.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -490,12 +507,9 @@ border-color: white;
   grid-template-rows: repeat(12, 1fr);
   width: 99vw;
   height: 90vh;
-  
-  
-
 }
 
-.contenidonosotros{
+.contenidonosotros {
   color: #ff0000;
   width: 100%;
   height: 100%;
@@ -507,19 +521,20 @@ border-color: white;
   text-shadow: 2px 4px 6px gold;
 }
 
-.contenidonosotros2{
+.contenidonosotros2 {
   margin-left: 2vw;
   grid-row: 2 / 6;
   grid-column: 1 / 1;
 }
-.contenidonosotros2 img{
+
+.contenidonosotros2 img {
   border-radius: 30px;
   width: 100%;
   height: 100%;
   border: 5px solid black;
 }
 
-.contenidonosotros3{
+.contenidonosotros3 {
   margin-left: 2vw;
   grid-row: 2 / 6;
   grid-column: 1 / 1;
@@ -530,10 +545,9 @@ border-color: white;
   font-weight: bolder;
   text-shadow: 4px 4px 6px gold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
 }
 
-.contenidonosotros4{
+.contenidonosotros4 {
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 30px;
@@ -543,12 +557,11 @@ border-color: white;
   margin-left: 2vw;
   justify-content: center;
   text-align: justify;
-
   background-color: rgba(255, 255, 255, 0.526);
   border: 5px solid white;
 }
 
-.contenidonosotros5{
+.contenidonosotros5 {
   margin-top: 3vh;
   padding-left: 5px;
   padding-right: 5px;
@@ -565,7 +578,8 @@ border-color: white;
   grid-template-rows: 1fr;
   gap: 25px;
 }
-.nosotros1{
+
+.nosotros1 {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -575,10 +589,9 @@ border-color: white;
   background-color: rgba(255, 255, 255, 0.353);
   text-align: center;
   border: 5px solid red;
-  
-
 }
-.imgsobre{
+
+.imgsobre {
   padding: 3px;
   margin-left: 5px;
   margin-top: 10px;
@@ -586,7 +599,8 @@ border-color: white;
   height: 90%;
   border-radius: 30px;
 }
-.nosotros2{
+
+.nosotros2 {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -597,7 +611,8 @@ border-color: white;
   text-align: center;
   border: 5px solid red;
 }
-.nosotros3{
+
+.nosotros3 {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -607,10 +622,9 @@ border-color: white;
   background-color: rgba(255, 255, 255, 0.353);
   text-align: center;
   border: 5px solid red;
-  }
+}
 
-footer{
-  
+footer {
   align-items: center;
   align-content: center;
   height: 100%;
@@ -639,6 +653,7 @@ footer{
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -651,9 +666,8 @@ footer{
     opacity: 1;
   }
 }
+
 /* FIN ANIMACION LETRAS */
-
-
 
 
 /* FIN CSS SOBRE NOSOTROS */
@@ -673,21 +687,20 @@ footer{
   border: 5px solid red;  
 }
 
-.form-container .title{
+.form-container .title {
   color: white;
   font-size: 28px;
   font-weight: bolder;
   text-align: center;
-
 }
 
-.form-content{
+.form-content {
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  
 }
+
 .form-content  .left-side {
   padding-right: 2vw;
   grid-column: 1/2;
@@ -714,7 +727,7 @@ form .input-box input {
   border-right: solid 2px white;
 }
 
-ion-icon{
+ion-icon {
   padding: 3px;
   color: red;
   font-size: 30px;
@@ -722,9 +735,7 @@ ion-icon{
   border-bottom: 3px solid black;
 }
 
-
-
-.sectioncontacto{
+.sectioncontacto {
   background-image: url(img/8724306.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -735,14 +746,9 @@ ion-icon{
   grid-template-rows: 1fr 1fr 1fr;
   width: 99vw;
   height: 90vh;
-  
-  
-
 }
 
-
-
-.footercontacto{
+.footercontacto {
   overflow: hidden;
   align-items: center;
   align-content: center;
@@ -753,6 +759,7 @@ ion-icon{
   text-align: center;
   font-size: 30px; 
 }
+
 /* FIN CSS CONTACTO */
 /* Responsive */
 
@@ -761,169 +768,155 @@ ion-icon{
   header{
     width: 100%;
   }
-  header img{
+  header img {
     margin: auto;
   }
   .login, .tododivaside, .left-side, .contenidonosotros3, .contenidonosotros2, .contenidonosotros5  {
     display: none;
   }
-  .nav{
+  .nav {
     width: 100%;
   }
-  .sectionmain{
+  .sectionmain {
     width: 100%;
-    
   }
-  .carrusel{
+  .carrusel {
     border: none; 
   }
-  .contenidonosotros4{
+  .contenidonosotros4 {
     font-size: small;
     width: 150%;
     height: 150%;
     margin-top: 30px ;
-   
   }
-  .juegos{
+  .juegos {
     width: 100%;     
   }
-  .mesjuegos{
+  .mesjuegos {
     padding: 0;
     display: none;
   }
-  .container{
+  .container {
     width: 70%;
     height: 60%;
    margin: auto;
   }
-  .tituloj{
+  .tituloj {
     padding-bottom: 0px;
   }
-  #hide3, #hide2, #hide1{
+  #hide3, #hide2, #hide1 {
     display: none;
     margin: 0px;
   }
-  .container>div{
+  .container>div {
     margin: 8px;
   }
 }
+
 /* Tablet vertical */
 @media screen and (max-width:750px) {
   header{
     width: 100%;
   }
-.tododivaside  {
+  .tododivaside {
     display: none;
   }
-  .nav{
+  .nav {
     width: 100%;
   }
-  .sectionmain{
+  .sectionmain {
     width: 100%;
-    
   }
-  .carrusel{
+  .carrusel {
     border: none;
-    
   }
-  .contenidonosotros2, .contenidonosotros3{
+  .contenidonosotros2, .contenidonosotros3 {
     width: 130%;
-  
   }
-  .contenidonosotros4{
+  .contenidonosotros4 {
     font-size: small;
-  width: 130%;
-  margin-left: 60%;
+    width: 130%;
+    margin-left: 60%;
   }
   .nosotros1, .nosotros3{
     font-size: small;
     width: 150%;
-    
   }
-  .nosotros3{
+  .nosotros3 {
     margin-left: 60%;
   }
-  .nosotros2{
+  .nosotros2 {
     display: none;  
   }
-.mesjuegos{
-  padding: 0px;
+  .mesjuegos {
+    padding: 0px;
+  }
 }
-}
+
 /* Movil Horizontal */
-@media screen and (max-width:880px){
-  header{
+@media screen and (max-width:880px) {
+  header {
     width: 100%;
   }
-
-  .nav{
+  .nav {
     width: 100%;
   }
-  .sectionmain{
+  .sectionmain {
     width: 100%;
-    
   }
-  .carrusel{
+  .carrusel {
     border: none;
-    
   }
-  .contenidonosotros2, .contenidonosotros3{
+  .contenidonosotros2, .contenidonosotros3 {
     width: 130%;
-  
   }
-  .contenidonosotros4{
+  .contenidonosotros4 {
     font-size: small;
-  width: 130%;
-  margin-left: 60%;
-  }
-  .nosotros1, .nosotros3{
-    font-size: small;
-    width: 150%;
-    
-  }
-  .nosotros3{
+    width: 130%;
     margin-left: 60%;
   }
-  .nosotros2{
-    display: none;  
-  }
-.mesjuegos{
-  padding: 0px;
-}
-.mesjuegos{
-  padding: 0px;
-}
-}
-/* tablet horizontal */
-@media screen and (min-width:1150px)and(max-width:1299px){
-  header{
-    width: 100%;
-  }
- 
-  .nav{
-    width: 100%;
-  }
-  .sectionmain{
-    width: 100%;
-    
-  }
-
-  .nosotros1, .nosotros3{
+  .nosotros1, .nosotros3 {
     font-size: small;
     width: 150%;
-    
   }
-  .nosotros3{
+  .nosotros3 {
     margin-left: 60%;
   }
-  .nosotros2{
+  .nosotros2 {
     display: none;  
-  }
-
   }
   .mesjuegos{
     padding: 0px;
   }
-  @media screen and (min-width:1300px){
-    
-    }
+  .mesjuegos{
+    padding: 0px;
+  }
+}
+
+/* tablet horizontal */
+@media screen and (min-width:1150px)and(max-width:1299px) {
+  header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .sectionmain {
+    width: 100%;
+  }
+  .nosotros1, .nosotros3 {
+    font-size: small;
+    width: 150%;
+  }
+  .nosotros3 {
+    margin-left: 60%;
+  }
+  .nosotros2 {
+    display: none;  
+  }
+  .mesjuegos{
+    padding: 0px;
+  }
+}
+@media screen and (min-width:1300px) {
+}
