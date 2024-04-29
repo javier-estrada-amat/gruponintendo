@@ -6,41 +6,49 @@
     <!-- importamos la libreria de iconos ionic.io -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <img src="img/public.png" alt="">
+        <img src="img/public.png">
     </header>
-        <nav class="nav">
-            <ul class="nav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Menú</a>
-                    <ul>
-                        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="Area_Actuacion.html">Juegos del Mes</a></li>
-                        <li><a href="https://www.nintendo.com/es-es/Noticias/Noticias-y-novedades-11145.html">Noticias y Novedades</a></li>
-                    </ul>
-                </li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav class="nav">
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Menú</a>
+                <ul>
+                    <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="juegosDelMes.html">Juegos del Mes</a></li>
+                    <li><a href="https://www.nintendo.com/es-es/Noticias/Noticias-y-novedades-11145.html">Noticias y Novedades</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="login">
+            <form action="login"> <input type="text" placeholder="Usuario" required>
+            <br><input type="password" placeholder="Contraseña" minlength="4" maxlength="8" required><br>
+            <input type="submit" value=" Login " id="logreg"><input type="submit" value=" Registrarme " id="logreg"></form>
+        </div>
+    </nav>
     <section class="sectioncontacto">
         <div class="form-container">
             <div class="title">Ponte en contacto con nosotros</div>
             <div class="form-content">
                 <div class="left-side">
                     <div class="address-details">
-                        <ion-icon name="map-outline"></ion-icon>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Calle+Mayor+12,+28013+Madrid,+España" target="_blank">
+                            <ion-icon name="map-outline"></ion-icon>
+                        </a>
                         <div class="topic">Dirección:</div>
                         <div class="text-one">Calle Mayor, 12</div>
                         <div class="text-two">28013 Madrid, España</div>
                     </div>
                     <div class="phone-details">
-                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="tel:+34678123456">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </a>
                         <div class="topic">Teléfono</div>
                         <div class="text-one">+34 678 123 456</div>
                     </div>
@@ -59,11 +67,11 @@
                     </div>
                     <div class="input-box">
                         <label for="">Email</label>
-                        <input type="text" placeholder="Introduce tu email" required>
+                        <input type="email" placeholder="Introduce tu email" required>
                     </div>
                     <div class="input-box">
                         <label for="">Télefono</label>
-                        <input type="text" placeholder="Número de teléfono">
+                        <input type="number" placeholder="Número de teléfono">
                     </div>
                     <div class="input-box input-option">
                         <select name="" id="">
@@ -76,7 +84,7 @@
                         <textarea name="" id="" cols="40" rows="8"></textarea>
                     </div>
                     <div class="btn">
-                        <form action="legal"><input type="radio" required>He leido los términos</form>
+                        <form action="legal"><input type="checkbox" required>He leido los términos</form>
                         <input type="submit"> 
                     </div>
                 </form>
